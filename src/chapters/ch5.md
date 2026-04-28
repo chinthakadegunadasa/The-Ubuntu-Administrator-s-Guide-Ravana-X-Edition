@@ -6,12 +6,14 @@
 ## 5.1 The Lifecycle of Software
 ## 5.1 මෘදුකාංගයක ජීවන චක්‍රය
 
-**[Humanized English]**
+**[English]**
+
 In a production environment like **Ravana-X**, we do not simply "install" software; we manage its entire lifecycle. Ubuntu uses the **Advanced Package Tool (APT)** to handle dependencies and ensure system integrity. 
 
 As a CTO, you must distinguish between the stability of the core OS and the agility of specialized applications. While we rely on `apt` for the hardened Linux kernel and libraries, we utilize **Snaps** for containerized, self-updating engineering tools that need to be isolated from the base system. This hybrid approach ensures that a medical app update never breaks the underlying energy monitoring service.
 
 **[සිංහල]**
+
 **Ravana-X** වැනි සජීවී පද්ධතියකදී අප කරන්නේ හුදෙක් මෘදුකාංග ස්ථාපනය කිරීම පමණක් නොව, එහි සමස්ත ජීවන චක්‍රයම කළමනාකරණය කිරීමයි. මෘදුකාංග අතර ඇති අන්තර්-සම්බන්ධතා (Dependencies) හැසිරවීමට සහ පද්ධතියේ ස්ථාවරත්වය සුරැකීමට Ubuntu විසින් **Advanced Package Tool (APT)** භාවිතා කරයි.
 
 තාක්ෂණික ප්‍රධානියෙකු ලෙස, ඔබ මෙහෙයුම් පද්ධතියේ ස්ථායීතාවය සහ විශේෂිත මෘදුකාංගවල වේගවත් බව අතර වෙනස හඳුනාගත යුතුය. Linux කර්නලය වැනි මූලික කොටස් සඳහා අප `apt` භාවිතා කරන අතර, ප්‍රධාන පද්ධතියෙන් වෙන්ව තබාගත යුතු විශේෂිත ඉංජිනේරු මෙවලම් සඳහා **Snaps** තාක්ෂණය භාවිතා කරමු. මෙම දෙමුහුන් ක්‍රමය නිසා, වෛද්‍ය යෙදුමක යාවත්කාලීන කිරීමක් මගින් බලශක්ති පද්ධතියට බාධාවක් වීම වළක්වයි.
@@ -21,7 +23,8 @@ As a CTO, you must distinguish between the stability of the core OS and the agil
 ## 5.2 Managing Private Repositories
 ## 5.2 පෞද්ගලික මෘදුකාංග ගබඩා කළමනාකරණය
 
-**[Humanized English]**
+**[English]**
+
 To maintain **Digital Sovereignty**, we do not rely solely on public mirrors. For Ravana-X, we host our own **Local APT Repository**. This allows us to:
 1. **Audit Packages:** Every update is tested in a sandbox before being pushed to the field nodes.
 2. **Bandwidth Efficiency:** 10kW nodes in remote areas like Doloswela Kanda sync with a local mirror rather than consuming international bandwidth.
