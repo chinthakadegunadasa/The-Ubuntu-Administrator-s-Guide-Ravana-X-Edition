@@ -7,12 +7,14 @@
 ## 3.1 The Deployment Philosophy
 ## 3.1 පද්ධති යෙදවීමේ දර්ශනය
 
-**[Humanized English]**
+**[English]**
+
 In the **Ravana-X** project, we do not perform "manual installs." To ensure national-scale reliability, every field unit must be identical at the kernel level. As a CTO, I advocate for **Immutable Infrastructure**. This means we define the server's state in code (YAML), and the system builds itself automatically. 
 
 Whether we are deploying a node in the Colombo data center or a remote 10kW generator unit in Doloswela Kanda, the process is hands-off. This eliminates human error and ensures that security patches are baked into the system from the first second of its life.
 
 **[සිංහල]**
+
 **Ravana-X** ව්‍යාපෘතියේදී අප "අතින් සිදුකරන ස්ථාපනයන්" (Manual installs) සිදු නොකරමු. ජාතික මට්ටමේ විශ්වාසනීයත්වය සහතික කිරීම සඳහා, සෑම ඒකකයක්ම කර්නල් මට්ටමින් එක හා සමාන විය යුතුය. තාක්ෂණික ප්‍රධානියෙකු ලෙස මා යෝජනා කරන්නේ "නොවෙනස්වන යටිතල පහසුකම්" (Immutable Infrastructure) ක්‍රමයයි. මෙහිදී අප කරන්නේ සේවාදායකයේ ස්වභාවය කේතයක් (YAML) හරහා අර්ථ දක්වා, පද්ධතිය ස්වයංක්‍රීයව ගොඩනැගීමට ඉඩ දීමයි.
 
 කොළඹ දත්ත මධ්‍යස්ථානයේ හෝ දොලොස්වෙල කන්දේ 10kW ඒකකයක වුවද, මෙම ක්‍රියාවලිය සිදුවන්නේ ස්වයංක්‍රීයවය. එමගින් මිනිස් අතින් සිදුවන වැරදි අවම වන අතර, පද්ධතිය ආරම්භයේ සිටම ආරක්ෂණ යාවත්කාලීන කිරීම්වලින් සමන්විත බව සහතික කෙරේ.
