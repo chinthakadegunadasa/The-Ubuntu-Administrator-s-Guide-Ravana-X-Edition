@@ -6,7 +6,7 @@
 ## 1.1 The Architecture of Stability
 ## 1.1 ස්ථාවරත්වයේ සැලසුම් ශිල්පය
 
-**[Humanized English]**
+**English]**
 To understand Ubuntu, one must first respect **Debian**. For over 25 years, I have worked with the Debian lineage because of its uncompromising commitment to stability and the "Social Contract" of Open Source. Debian is the bedrock—the raw, unrefined granite of the Linux world. 
 
 Ubuntu takes this granite and carves it into a high-performance engine. It bridges the gap between the conservative nature of Debian and the rapid innovation required by modern engineering projects like **Ravana-X**. As an Architect, you aren't just choosing an OS; you are choosing a lineage that respects data sovereignty and long-term survival.
@@ -21,7 +21,7 @@ Ubuntu කරන්නේ මෙම පදනම ගෙන එය ඉහළ ක�
 ## 1.2 Package Life Cycle: From Sid to Noble
 ## 1.2 මෘදුකාංග ජීවන චක්‍රය: Sid සිට Noble දක්වා
 
-**[Humanized English]**
+**[English]**
 Every package in your Ravana-X cluster begins its life in **Debian Sid** (Unstable). From there, it migrates to **Debian Testing**, and eventually, Ubuntu "pulls" these packages to form the base of an LTS (Long Term Support) release. 
 
 For the **Ubuntu 24.04 (Noble Numbat)** release, this process ensures that every library—from the Linux kernel to the OpenSSL layers—has been tested across thousands of different hardware configurations. This is why we trust it for 10kW electricity generators; the software has already survived the "trial by fire" in the global Linux community.
@@ -36,7 +36,7 @@ For the **Ubuntu 24.04 (Noble Numbat)** release, this process ensures that every
 ## 1.3 Why Ubuntu for Ravana-X?
 ## 1.3 Ravana-X සඳහා Ubuntu තෝරාගන්නේ ඇයි?
 
-**[Humanized English]**
+**[English]**
 In the Ravana-X ecosystem, we prioritize three architectural pillars:
 1. **Security:** Ubuntu Pro provides a 12-year maintenance window, critical for national infrastructure.
 2. **Hardware Synergy:** Native support for the latest NVMe and GPU drivers required for our AI diagnostics.
