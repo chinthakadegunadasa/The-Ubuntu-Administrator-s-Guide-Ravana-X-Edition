@@ -1,4 +1,3 @@
-
 # Chapter 5: Advanced Package Management
 # පස්වන පරිච්ඡේදය: උසස් මෘදුකාංග පැකේජ කළමනාකරණය
 
