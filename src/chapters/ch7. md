@@ -1,4 +1,5 @@
 # Chapter 7: Observability – Logging & System Telemetry
+
 # හත්වන පරිච්ඡේදය: පද්ධති නිරීක්ෂණය - ලොග් සටහන් සහ ටෙලිමෙට්‍රි
 
 ---
@@ -6,12 +7,14 @@
 ## 7.1 Total Visibility: The Pulse of Ravana-X
 ## 7.1 පූර්ණ දෘශ්‍යතාව: Ravana-X පද්ධතියේ හෘද ස්පන්දනය
 
-**[Humanized English]**
+**[English]**
+
 In a critical infrastructure project, what you cannot see, you cannot manage. For the **Ravana-X** CTO, observability is about more than just knowing if a server is "up" or "down." It is about understanding the health of every 10kW generator node in real-time.
 
 Ubuntu 24.04 utilizes **systemd-journald** as its primary logging engine. Unlike old text-based logs, the journal is binary and indexed, allowing us to perform high-speed searches across millions of events. Whether it is a slight voltage drop in a field unit or an unauthorized SSH attempt, the journal records it with microsecond precision.
 
 **[සිංහල]**
+
 තීරණාත්මක යටිතල පහසුකම් ව්‍යාපෘතියකදී, ඔබට දැකීමට නොහැකි දෙයක් කළමනාකරණය කළ නොහැක. **Ravana-X** තාක්ෂණික ප්‍රධානියාට පද්ධති නිරීක්ෂණය යනු හුදෙක් සේවාදායකයක් ක්‍රියාත්මක වන්නේද නැද්ද යන්න දැනගැනීම පමණක් නොවේ. එය සෑම 10kW විදුලි ජනක ඒකකයකම සෞඛ්‍ය තත්ත්වය එසැණින් වටහා ගැනීමයි.
 
 Ubuntu 24.04 සිය ප්‍රධාන ලොග් එන්ජිම ලෙස **systemd-journald** භාවිතා කරයි. පැරණි පෙළ පදනම් කරගත් ලොග් සටහන් මෙන් නොව, මෙය ද්විමය (Binary) සහ දර්ශකගත (Indexed) පද්ධතියකි. එමගින් සිදුවීම් මිලියන ගණනක් අතර ඉතා වේගයෙන් සෙවුම් සිදු කිරීමට අපට හැකියාව ලැබේ. ක්ෂේත්‍ර ඒකකයක සිදුවන සුළු වෝල්ටීයතා අඩුවීමක් හෝ අනවසරයෙන් පද්ධතියට ඇතුළු වීමට ගන්නා උත්සාහයක් වුවද, ඉතාමත් නිවැරදිව මෙහි සටහන් වේ.
@@ -25,6 +28,7 @@ Ubuntu 24.04 සිය ප්‍රධාන ලොග් එන්ජිම ල
 To extract intelligence from the noise, we use the `journalctl` command. As an architect, you must be able to filter logs by service, priority, or time. In the Ravana-X ecosystem, we often "follow" the logs of the energy monitoring service to watch live data flows.
 
 **[සිංහල]**
+
 අනවශ්‍ය දත්ත අතරින් වැදගත් තොරතුරු ලබා ගැනීම සඳහා අප `journalctl` විධානය භාවිතා කරමු. සැලසුම් ශිල්පියෙකු ලෙස, සේවාවන්, ප්‍රමුඛතාවය හෝ කාලය අනුව ලොග් සටහන් පෙරීමට (Filter) ඔබට හැකි විය යුතුය. Ravana-X පද්ධතියේදී, සජීවී දත්ත ගලායාම නිරීක්ෂණය කිරීම සඳහා අප බලශක්ති අධීක්ෂණ සේවාවේ ලොග් සටහන් බොහෝ විට "Follow" කරමු.
 
 ```bash
